@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hidden Leaf Bank</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="account-sec">
+      <div class="balance">
+        <div class="dbox box">
+          <h2>Deposit</h2>
+          <h2>$ <span id="deposit-amount">00</span></h2>
+        </div>
+        <div class="wbox box">
+          <h2>Withdraw</h2>
+          <h2>$ <span id="withdraw-amount">00</span></h2>
+        </div>
+        <div class="bbox box">
+          <h2>Balance</h2>
+          <h2>$ <span id="balance-amount">00</span></h2>
+        </div>
+      </div>
+      <div class="account-input">
+        <div class="d-form fbox">
+          <h2>Deposit</h2>
+          <input
+            type="number"
+            name="deposit"
+            id="deposit-input"
+            placeholder="$ Amount you want to deposit"
+          />
+          <button id="d-btn">Deposit</button>
+        </div>
+        <div class="w-form fbox">
+          <h2>Withdraw</h2>
+          <input
+            type="number"
+            name="withdraw"
+            id="withdraw-input"
+            placeholder="$ Amount you want to withdraw"
+          />
+          <button id="w-btn">Withdraw</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/account.js"></script>
+  </body>
+</html>
